@@ -1,0 +1,153 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif; /* Clean font for modern UI */
+  background: #1d1f20; /* Dark gray background */
+  color: #f4f4f4; /* Light gray text for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App Container */
+.app {
+  max-width: 600px;
+  width: 90%;
+  padding: 30px;
+  background: #2a2e35; /* Slightly lighter gray for app background */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Header */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4e8e8e; /* Calming teal color for header */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field and Add Button */
+.task-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #444; /* Dark border for input */
+  border-radius: 30px;
+  outline: none;
+  background: #333;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+.task-input input::placeholder {
+  color: #bbb; /* Light gray placeholder */
+}
+
+.task-input input:focus {
+  border-color: #4e8e8e; /* Focus border turns teal */
+}
+
+.task-input button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #4e8e8e; /* Teal for Add Button */
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.task-input button:hover {
+  background: #357d7d; /* Darker teal for hover */
+  transform: scale(1.05);
+}
+
+/* Task List */
+.task-list {
+  margin-top: 20px;
+}
+
+.no-tasks {
+  font-size: 1.2rem;
+  color: #aaa; /* Lighter gray for no tasks message */
+}
+
+/* Task Items */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  background: #3e4349; /* Soft gray background for task */
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #fff; /* White text for better contrast */
+  transition: background 0.3s ease;
+}
+
+.task-item:hover {
+  background: #50575e; /* Slightly lighter gray on hover */
+}
+
+/* Task Text */
+.task-text {
+  flex: 1;
+  font-size: 1rem;
+  color: #f4f4f4; /* White text for task */
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #bbb; /* Lighter gray for completed tasks */
+}
+
+/* Status Buttons */
+.status-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.status-btn.done {
+  background: #4caf50; /* Green for Done */
+  color: #fff;
+}
+
+.status-btn.not-done {
+  background: #f57c00; /* Orange for Not Done */
+  color: #fff;
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #f44336; /* Red for Delete */
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
