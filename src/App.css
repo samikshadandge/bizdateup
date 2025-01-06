@@ -1,3 +1,4 @@
+/* CSS File */
 body {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif; 
@@ -72,7 +73,6 @@ h1 {
   transform: scale(1.05);
 }
 
-/* Task List */
 .task-list {
   margin-top: 20px;
 }
@@ -81,6 +81,7 @@ h1 {
   font-size: 1.2rem;
   color: #aaa; 
 }
+
 .task-item {
   display: flex;
   justify-content: space-between;
@@ -96,7 +97,6 @@ h1 {
 .task-item:hover {
   background: #50575e; 
 }
-
 
 .task-text {
   flex: 1;
@@ -128,7 +128,6 @@ h1 {
   background: #f57c00; 
 }
 
-
 .delete-btn {
   padding: 8px 15px;
   border: none;
@@ -141,4 +140,30 @@ h1 {
 
 .delete-btn:hover {
   background: #d32f2f;
+}
+
+.link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.link-button:hover {
+  background: #f4f4f4;
+  transform: scale(1.05);
+}
+
+.white-button {
+  color: #fff;
+  background-color: #4e8e8e;
+  padding: 10px 20px;
+  border-radius: 30px;
 }
